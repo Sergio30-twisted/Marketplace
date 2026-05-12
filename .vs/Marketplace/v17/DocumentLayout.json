@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\CatalogService.API\\CatalogService.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CatalogService.API\\CatalogService.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Marketplace.slnLaunch.user||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Marketplace.slnLaunch.user||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\OrderService.API\\OrderService.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OrderService.API\\OrderService.API.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CatalogService.API.csproj.user",
+              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\CatalogService.API\\CatalogService.API.csproj.user",
+              "RelativeDocumentMoniker": "CatalogService.API\\CatalogService.API.csproj.user",
+              "ToolTip": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\CatalogService.API\\CatalogService.API.csproj.user",
+              "RelativeToolTip": "CatalogService.API\\CatalogService.API.csproj.user",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2026-04-30T10:54:23.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.API.csproj.user",
+              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\OrderService.API\\OrderService.API.csproj.user",
+              "RelativeDocumentMoniker": "OrderService.API\\OrderService.API.csproj.user",
+              "ToolTip": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\OrderService.API\\OrderService.API.csproj.user",
+              "RelativeToolTip": "OrderService.API\\OrderService.API.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2026-04-30T10:43:35.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Marketplace.slnLaunch.user",
+              "DocumentMoniker": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Marketplace.slnLaunch.user",
+              "RelativeDocumentMoniker": "Marketplace.slnLaunch.user",
+              "ToolTip": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Marketplace.slnLaunch.user",
+              "RelativeToolTip": "Marketplace.slnLaunch.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2026-04-30T10:43:15.385Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 109,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

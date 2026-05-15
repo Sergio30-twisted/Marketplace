@@ -18,6 +18,7 @@ message ProductoResponse {
   string nombre = 2;
   double precio = 3;
   int32 stock = 4;
+  bool isactive = 5;
 }
 
 message UpdateStockRequest {

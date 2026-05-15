@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Catalogo",
+    "\\Catalogo\\Application",
+    "\\Catalogo\\Application\\Service",
     "\\CatalogService.API",
     "\\OrderService.API"
   ],
-  "SelectedNode": "\\Catalogo\\appsettings.json",
+  "SelectedNode": "\\Catalogo\\Application\\Service\\CatalogoGrpcService.cs",
   "PreviewInSolutionExplorer": false
 }

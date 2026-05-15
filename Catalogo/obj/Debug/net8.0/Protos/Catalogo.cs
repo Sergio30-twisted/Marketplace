@@ -25,21 +25,22 @@ namespace Catalogo.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVQcm90b3MvY2F0YWxvZ28ucHJvdG8SCGNhdGFsb2dvIiAKEkdldFByb2R1",
-            "Y3RvUmVxdWVzdBIKCgJpZBgBIAEoCSJWChBQcm9kdWN0b1Jlc3BvbnNlEhMK",
+            "Y3RvUmVxdWVzdBIKCgJpZBgBIAEoCSJoChBQcm9kdWN0b1Jlc3BvbnNlEhMK",
             "C3Byb2R1Y3RvX2lkGAEgASgJEg4KBm5vbWJyZRgCIAEoCRIOCgZwcmVjaW8Y",
-            "AyABKAESDQoFc3RvY2sYBCABKAUiQgoSVXBkYXRlU3RvY2tSZXF1ZXN0EgoK",
-            "AmlkGAEgASgJEhAKCGNhbnRpZGFkGAIgASgFEg4KBmFjY2lvbhgDIAEoCSI3",
-            "ChNVcGRhdGVTdG9ja1Jlc3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgSDwoHbWVu",
-            "c2FqZRgCIAEoCTKuAQoPQ2F0YWxvZ29TZXJ2aWNlEksKD09idGVuZXJQcm9k",
-            "dWN0bxIcLmNhdGFsb2dvLkdldFByb2R1Y3RvUmVxdWVzdBoaLmNhdGFsb2dv",
-            "LlByb2R1Y3RvUmVzcG9uc2USTgoPQWN0dWFsaXphclN0b2NrEhwuY2F0YWxv",
-            "Z28uVXBkYXRlU3RvY2tSZXF1ZXN0Gh0uY2F0YWxvZ28uVXBkYXRlU3RvY2tS",
-            "ZXNwb25zZUISqgIPQ2F0YWxvZ28uUHJvdG9zYgZwcm90bzM="));
+            "AyABKAESDQoFc3RvY2sYBCABKAUSEAoIaXNhY3RpdmUYBSABKAgiQgoSVXBk",
+            "YXRlU3RvY2tSZXF1ZXN0EgoKAmlkGAEgASgJEhAKCGNhbnRpZGFkGAIgASgF",
+            "Eg4KBmFjY2lvbhgDIAEoCSI3ChNVcGRhdGVTdG9ja1Jlc3BvbnNlEg8KB3N1",
+            "Y2Nlc3MYASABKAgSDwoHbWVuc2FqZRgCIAEoCTKuAQoPQ2F0YWxvZ29TZXJ2",
+            "aWNlEksKD09idGVuZXJQcm9kdWN0bxIcLmNhdGFsb2dvLkdldFByb2R1Y3Rv",
+            "UmVxdWVzdBoaLmNhdGFsb2dvLlByb2R1Y3RvUmVzcG9uc2USTgoPQWN0dWFs",
+            "aXphclN0b2NrEhwuY2F0YWxvZ28uVXBkYXRlU3RvY2tSZXF1ZXN0Gh0uY2F0",
+            "YWxvZ28uVXBkYXRlU3RvY2tSZXNwb25zZUISqgIPQ2F0YWxvZ28uUHJvdG9z",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Catalogo.Protos.GetProductoRequest), global::Catalogo.Protos.GetProductoRequest.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Catalogo.Protos.ProductoResponse), global::Catalogo.Protos.ProductoResponse.Parser, new[]{ "ProductoId", "Nombre", "Precio", "Stock" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Catalogo.Protos.ProductoResponse), global::Catalogo.Protos.ProductoResponse.Parser, new[]{ "ProductoId", "Nombre", "Precio", "Stock", "Isactive" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Catalogo.Protos.UpdateStockRequest), global::Catalogo.Protos.UpdateStockRequest.Parser, new[]{ "Id", "Cantidad", "Accion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Catalogo.Protos.UpdateStockResponse), global::Catalogo.Protos.UpdateStockResponse.Parser, new[]{ "Success", "Mensaje" }, null, null, null, null)
           }));
@@ -285,6 +286,7 @@ namespace Catalogo.Protos {
       nombre_ = other.nombre_;
       precio_ = other.precio_;
       stock_ = other.stock_;
+      isactive_ = other.isactive_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -342,6 +344,18 @@ namespace Catalogo.Protos {
       }
     }
 
+    /// <summary>Field number for the "isactive" field.</summary>
+    public const int IsactiveFieldNumber = 5;
+    private bool isactive_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Isactive {
+      get { return isactive_; }
+      set {
+        isactive_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -361,6 +375,7 @@ namespace Catalogo.Protos {
       if (Nombre != other.Nombre) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Precio, other.Precio)) return false;
       if (Stock != other.Stock) return false;
+      if (Isactive != other.Isactive) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -372,6 +387,7 @@ namespace Catalogo.Protos {
       if (Nombre.Length != 0) hash ^= Nombre.GetHashCode();
       if (Precio != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Precio);
       if (Stock != 0) hash ^= Stock.GetHashCode();
+      if (Isactive != false) hash ^= Isactive.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -406,6 +422,10 @@ namespace Catalogo.Protos {
         output.WriteRawTag(32);
         output.WriteInt32(Stock);
       }
+      if (Isactive != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(Isactive);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -432,6 +452,10 @@ namespace Catalogo.Protos {
         output.WriteRawTag(32);
         output.WriteInt32(Stock);
       }
+      if (Isactive != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(Isactive);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -453,6 +477,9 @@ namespace Catalogo.Protos {
       }
       if (Stock != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Stock);
+      }
+      if (Isactive != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -477,6 +504,9 @@ namespace Catalogo.Protos {
       }
       if (other.Stock != 0) {
         Stock = other.Stock;
+      }
+      if (other.Isactive != false) {
+        Isactive = other.Isactive;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -513,6 +543,10 @@ namespace Catalogo.Protos {
             Stock = input.ReadInt32();
             break;
           }
+          case 40: {
+            Isactive = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -546,6 +580,10 @@ namespace Catalogo.Protos {
           }
           case 32: {
             Stock = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Isactive = input.ReadBool();
             break;
           }
         }

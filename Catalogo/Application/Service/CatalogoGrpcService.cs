@@ -17,7 +17,7 @@ namespace Catalogo.Services
         }
 
         public override async Task<ProductoResponse> ObtenerProducto(
-    GetProductoRequest request, ServerCallContext context)
+        GetProductoRequest request, ServerCallContext context)
         {
             var catalogos = await _catalogoService.ObtenerTodosLosCatalogos();
 
@@ -35,7 +35,7 @@ namespace Catalogo.Services
                 Nombre = producto.Name,
                 Precio = (double)producto.Price,
                 Stock = producto.Stock,
-                IsActive = producto.IsActive
+                Isactive = producto.IsActive
             };
         }
 

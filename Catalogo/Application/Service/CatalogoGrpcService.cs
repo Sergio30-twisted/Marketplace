@@ -34,7 +34,8 @@ namespace Catalogo.Services
                 ProductoId = producto.Id.ToString(),
                 Nombre = producto.Name,
                 Precio = (double)producto.Price,
-                Stock = producto.Stock
+                Stock = producto.Stock,
+                IsActive = producto.IsActive
             };
         }
 

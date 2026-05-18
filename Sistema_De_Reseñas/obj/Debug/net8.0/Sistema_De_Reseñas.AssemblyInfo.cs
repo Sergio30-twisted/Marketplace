@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema_De_Reseñas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8299d83d0384282fa04287505d35e996859cf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8cdbca3039e7f908fd7a9069b5e90118dd2fec0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema_De_Reseñas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema_De_Reseñas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

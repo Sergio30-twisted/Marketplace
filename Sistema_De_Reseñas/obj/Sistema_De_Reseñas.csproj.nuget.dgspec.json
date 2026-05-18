@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josem\\source\\repos\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj": {}
+    "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josem\\source\\repos\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj": {
+    "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josem\\source\\repos\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj",
+        "projectUniqueName": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj",
         "projectName": "Sistema_De_Reseñas",
-        "projectPath": "C:\\Users\\josem\\source\\repos\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj",
-        "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josem\\source\\repos\\Marketplace\\Sistema_De_Reseñas\\obj\\",
+        "projectPath": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Sistema_De_Reseñas\\Sistema_De_Reseñas.csproj",
+        "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Marketplace\\Sistema_De_Reseñas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "net8.0": {
-            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -45,11 +44,10 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
@@ -68,24 +66,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.26, 8.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.26, 8.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.26, 8.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.26, 8.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -94,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

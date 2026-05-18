@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"hc9cW2hO3YWX/lc1QHbFZCya3dz6K8ivo9uGHEjCbig=","Source":"CatalogService.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "OhvjsSb2NS4YP1N20QhVB1vcoTNV4a4xoebhNSV/888=",
+  "Source": "Catologo.API",
+  "BasePath": "_content/Catologo.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

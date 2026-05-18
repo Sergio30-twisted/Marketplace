@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Logisitica_Integrada.props" />
+</Project>

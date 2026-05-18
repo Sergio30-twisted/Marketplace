@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "CatalogService.API.Controllers.CatalogController",
+    "ContainingType": "CatalogService.API.Controllers.ConsultaCatalogosController",
     "Method": "GetProductos",
     "RelativePath": "catalog/productos",
     "HttpMethod": "GET",
@@ -10,7 +10,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CatalogService.API.Controllers.CatalogController",
+    "ContainingType": "CatalogService.API.Controllers.ConsultaCatalogosController",
     "Method": "CrearProducto",
     "RelativePath": "catalog/productos",
     "HttpMethod": "POST",
@@ -19,14 +19,14 @@
     "Parameters": [
       {
         "Name": "product",
-        "Type": "CatalogService.API.Models.Product",
+        "Type": "Catologo.API.Domain.Entities.Producto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CatalogService.API.Controllers.CatalogController",
+    "ContainingType": "CatalogService.API.Controllers.ConsultaCatalogosController",
     "Method": "GetProducto",
     "RelativePath": "catalog/productos/{id}",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CatalogService.API.Controllers.CatalogController",
+    "ContainingType": "CatalogService.API.Controllers.ConsultaCatalogosController",
     "Method": "ReservarStock",
     "RelativePath": "catalog/reservar",
     "HttpMethod": "POST",

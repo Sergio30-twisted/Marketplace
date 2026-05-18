@@ -1,0 +1,6 @@
+@Logisitica_Integrada_HostAddress = http://localhost:5207
+
+GET {{Logisitica_Integrada_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@Auditoria_y_Trazabilidad_HostAddress = http://localhost:5050
+
+GET {{Auditoria_y_Trazabilidad_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Auditoria_y_Trazabilidad.props" />
+</Project>

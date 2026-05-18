@@ -1,0 +1,127 @@
+[
+  {
+    "ContainingType": "Catalogo.Controllers.AdministracionDeCatalogosController",
+    "Method": "Update",
+    "RelativePath": "api/AdministracionDeCatalogos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "catalogoActualizado",
+        "Type": "Catalogo.Domain.Entities.Catalogo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Catalogo.Controllers.AdministracionDeCatalogosController",
+    "Method": "Delete",
+    "RelativePath": "api/AdministracionDeCatalogos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiGateway.Controllers.CatalogoGatewayController",
+    "Method": "ObtenerTodo",
+    "RelativePath": "api/Catalogo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiGateway.Controllers.CatalogoGatewayController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Catalogo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Catalogo.Controllers.ConsultaCatalogoController",
+    "Method": "ObtenerTodosLosCatalogos",
+    "RelativePath": "api/ConsultaCatalogo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Catalogo.Domain.Entities.Catalogo, Catalogo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Catalogo.Controllers.ConsultaCatalogoController",
+    "Method": "ObtenerCatalogosPorId",
+    "RelativePath": "api/ConsultaCatalogo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Catalogo.Domain.Entities.Catalogo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Catalogo.Controllers.GestorDeCategoriaController",
+    "Method": "GetByCategoria",
+    "RelativePath": "api/GestorDeCategoria/categoria/{nombreCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreCategoria",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

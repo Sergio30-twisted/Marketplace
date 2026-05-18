@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "LogisticsService.API.Controllers.LogisticsController",
+    "Method": "ListarEnvios",
+    "RelativePath": "api/logistica/envios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogisticsService.API.Controllers.LogisticsController",
+    "Method": "CrearEnvioManual",
+    "RelativePath": "api/logistica/envios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "evento",
+        "Type": "LogisticsService.API.Models.OrderCreatedEvent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogisticsService.API.Controllers.LogisticsController",
+    "Method": "ConsultarGuia",
+    "RelativePath": "api/logistica/guia/{numeroGuia}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroGuia",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogisticsService.API.Controllers.LogisticsController",
+    "Method": "ActualizarEstado",
+    "RelativePath": "api/logistica/guia/{numeroGuia}/estado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroGuia",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "LogisticsService.API.Controllers.ActualizarEstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogisticsService.API.Controllers.LogisticsController",
+    "Method": "ConsultarPorOrden",
+    "RelativePath": "api/logistica/orden/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Auditoria_y_Trazabilidad</name>
+    </assembly>
+    <members>
+        <member name="M:Auditoria_y_Trazabilidad.Application.Service.VerificadorDeIntegridadService.GenerarHash(Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria)">
+            Genera un hash SHA-256 basado en los campos inmutables del registro.
+            Se excluyen Id, HashIntegridad e IntegridadVerificada para evitar circularidad.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Application.Service.VerificadorDeIntegridadService.VerificarIntegridadAsync(System.String)">
+            Recupera un registro por Id y verifica que su hash no haya sido alterado.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Application.Service.VerificadorDeIntegridadService.DetectarRegistrosCorruptosAsync">
+            Escanea todos los registros y devuelve los que tienen hash inválido.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.ConsultorDeTrazabilidadController.RastrearFlujo(System.String)">
+            Retorna todos los eventos de un flujo distribuido ordenados cronológicamente.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.ConsultorDeTrazabilidadController.ObtenerPorId(System.String)">
+            Obtiene un registro específico por su Id de MongoDB.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.EnriquecedorDeContextoController.PreviewEnriquecimiento(Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria)">
+            
+            Enriquece un registro de auditoría con datos del contexto HTTP actual
+            (IP, CorrelationId, usuario) sin persistirlo. Útil para pre-visualizar
+            qué datos se agregarán antes de enviar al ReceptorDeLogs.
+            
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.GestorDeAuditoriaController.ObtenerTodos">
+            Obtiene los últimos 500 registros de auditoría.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.GestorDeAuditoriaController.ObtenerPorServicio(System.String)">
+            Filtra registros por nombre de microservicio.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.GestorDeAuditoriaController.ObtenerPorFechas(System.DateTime,System.DateTime)">
+            Filtra registros por rango de fechas (UTC).
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.ReceptorDeLogsController.RecibirLog(Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria)">
+            Recibe y persiste un evento de auditoría desde cualquier microservicio.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.VerificadorDeIntegridadController.VerificarRegistro(System.String)">
+            Verifica si el hash de un registro coincide con su contenido actual.
+        </member>
+        <member name="M:Auditoria_y_Trazabilidad.Controllers.VerificadorDeIntegridadController.EscanearIntegridad">
+            Escanea todos los registros y lista los que tienen hash inválido.
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.Servicio">
+            <summary>Servicio o microservicio que originó el evento</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.Accion">
+            <summary>Acción ejecutada (ej: CREATE_PRODUCTO, DELETE_CATALOGO)</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.Nivel">
+            <summary>Nivel del log: INFO, WARNING, ERROR, CRITICAL</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.Mensaje">
+            <summary>Mensaje descriptivo del evento</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.UsuarioId">
+            <summary>Id del usuario que ejecutó la acción (si aplica)</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.RecursoAfectado">
+            <summary>Recurso afectado (ej: Producto:abc123)</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.Contexto">
+            <summary>Datos adicionales en JSON (payload antes/después)</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.IpOrigen">
+            <summary>IP de origen de la petición</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.CorrelationId">
+            <summary>Correlación para rastrear flujos distribuidos</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.HashIntegridad">
+            <summary>Hash SHA256 del registro para verificar integridad</summary>
+        </member>
+        <member name="P:Auditoria_y_Trazabilidad.Domain.Entities.RegistroAuditoria.IntegridadVerificada">
+            <summary>Indica si el hash fue verificado exitosamente</summary>
+        </member>
+    </members>
+</doc>

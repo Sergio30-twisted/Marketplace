@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Sistema_De_Reseñas.props" />
-</Project>

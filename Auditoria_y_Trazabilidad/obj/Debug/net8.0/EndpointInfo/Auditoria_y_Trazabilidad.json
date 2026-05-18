@@ -1,0 +1,333 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Microservicio Auditoría y Trazabilidad",
+    "description": "Receptor de logs, gestión de auditoría, trazabilidad distribuida y verificación de integridad.",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/ConsultorDeTrazabilidad/flujo/{correlationId}": {
+      "get": {
+        "tags": [
+          "ConsultorDeTrazabilidad"
+        ],
+        "parameters": [
+          {
+            "name": "correlationId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultorDeTrazabilidad/{id}": {
+      "get": {
+        "tags": [
+          "ConsultorDeTrazabilidad"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EnriquecedorDeContexto/preview": {
+      "post": {
+        "tags": [
+          "EnriquecedorDeContexto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GestorDeAuditoria": {
+      "get": {
+        "tags": [
+          "GestorDeAuditoria"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GestorDeAuditoria/servicio/{servicio}": {
+      "get": {
+        "tags": [
+          "GestorDeAuditoria"
+        ],
+        "parameters": [
+          {
+            "name": "servicio",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/GestorDeAuditoria/fechas": {
+      "get": {
+        "tags": [
+          "GestorDeAuditoria"
+        ],
+        "parameters": [
+          {
+            "name": "desde",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "hasta",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ReceptorDeLogs": {
+      "post": {
+        "tags": [
+          "ReceptorDeLogs"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroAuditoria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VerificadorDeIntegridad/{id}": {
+      "get": {
+        "tags": [
+          "VerificadorDeIntegridad"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VerificadorDeIntegridad/escanear": {
+      "get": {
+        "tags": [
+          "VerificadorDeIntegridad"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "RegistroAuditoria": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "servicio": {
+            "type": "string",
+            "description": "Servicio o microservicio que originó el evento",
+            "nullable": true
+          },
+          "accion": {
+            "type": "string",
+            "description": "Acción ejecutada (ej: CREATE_PRODUCTO, DELETE_CATALOGO)",
+            "nullable": true
+          },
+          "nivel": {
+            "type": "string",
+            "description": "Nivel del log: INFO, WARNING, ERROR, CRITICAL",
+            "nullable": true
+          },
+          "mensaje": {
+            "type": "string",
+            "description": "Mensaje descriptivo del evento",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "string",
+            "description": "Id del usuario que ejecutó la acción (si aplica)",
+            "nullable": true
+          },
+          "recursoAfectado": {
+            "type": "string",
+            "description": "Recurso afectado (ej: Producto:abc123)",
+            "nullable": true
+          },
+          "contexto": {
+            "type": "string",
+            "description": "Datos adicionales en JSON (payload antes/después)",
+            "nullable": true
+          },
+          "ipOrigen": {
+            "type": "string",
+            "description": "IP de origen de la petición",
+            "nullable": true
+          },
+          "correlationId": {
+            "type": "string",
+            "description": "Correlación para rastrear flujos distribuidos",
+            "nullable": true
+          },
+          "hashIntegridad": {
+            "type": "string",
+            "description": "Hash SHA256 del registro para verificar integridad",
+            "nullable": true
+          },
+          "integridadVerificada": {
+            "type": "boolean",
+            "description": "Indica si el hash fue verificado exitosamente"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

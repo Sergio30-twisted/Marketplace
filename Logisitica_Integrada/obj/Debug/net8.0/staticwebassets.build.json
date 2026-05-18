@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "kjYNdmB5eEYzNVx+Jg84R7FpN964fhu5gi0p7pFTilg=",
-  "Source": "Logisitica_Integrada",
-  "BasePath": "_content/Logisitica_Integrada",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"Bk+z9gBS5cBw0qvJUZdGPj3Vz0Q51uVD9ZrcNj4ysiQ=","Source":"Logisitica_Integrada","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

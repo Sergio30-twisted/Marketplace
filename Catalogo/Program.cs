@@ -9,15 +9,10 @@ using Catalogo.Services;
 try
 {
     var builder = WebApplication.CreateBuilder(args);
-    builder.Services.AddCors(options =>
-    {
-        options.AddPolicy("AllowVite", policy =>
-        {
-            policy.WithOrigins("http://localhost:5173")
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        });
-    });
+
+    // Elimina toda la configuración de CORS
+    // builder.Services.AddCors(...);
+
     builder.Services.AddControllers()
         .AddJsonOptions(options =>
         {
@@ -26,6 +21,7 @@ try
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
     builder.Services.AddGrpc();
+    builder.WebHost.UseUrls("http://0.0.0.0:5110", "http://0.0.0.0:5112");
 
     builder.Services.AddSingleton<IMarketPlace_DBContext, MarketPlace_DBContext>();
     builder.Services.AddScoped<IConsultaCatalogoRepository, ConsultaCatalogoRepository>();
@@ -38,14 +34,14 @@ try
     var app = builder.Build();
 
     app.MapGrpcService<CatalogoGrpcService>();
-    
+
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-    app.UseCors("AllowVite");
-    app.UseHttpsRedirection();
+    // Elimina app.UseCors("AllowVite");
+    //app.UseHttpsRedirection();
     app.UseAuthorization();
     app.MapControllers();
     app.Run();

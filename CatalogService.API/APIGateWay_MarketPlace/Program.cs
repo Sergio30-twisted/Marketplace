@@ -7,22 +7,39 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVite",
-        policy => policy.WithOrigins("http://localhost:5173", "http://localhost")
+        policy => policy.WithOrigins("http://localhost:5173")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials());
 });
 
-// 2. Necesitamos HttpClient para que el Gateway pueda "llamar" al Catálogo
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSignalR();
+
+// Configuramos SignalR de forma elástica para conexiones WebSocket directas
+builder.Services.AddSignalR(options =>
+{
+    options.EnableDetailedErrors = true;
+});
+
 builder.Services.AddHostedService<EventBusConsumer>();
 
 var app = builder.Build();
-app.MapHub<NotificacionesHub>("/hub/notificaciones");
+
+app.UseCors("AllowVite");
+
+// Ajuste clave: Mapeamos los controladores antes del Hub para que las rutas HTTP 
+// no intenten buscar un fallback seguro en HTTPS
+app.UseRouting();
+app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapHub<NotificacionesHub>("/hub/notificaciones");
+});
 
 if (app.Environment.IsDevelopment())
 {
@@ -30,8 +47,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowVite");
-app.UseAuthorization();
-app.MapControllers();
+// 🛠️ FORZAR ÚNICAMENTE HTTP EN EL PUERTO 7013 (Elimina el puerto HTTPS 7003 de la memoria)
+app.Urls.Add("http://*:7013");
 
 app.Run();

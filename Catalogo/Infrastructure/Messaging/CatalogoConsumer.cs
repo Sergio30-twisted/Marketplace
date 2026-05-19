@@ -23,7 +23,7 @@ namespace Catalogo.Infrastructure.Messaging
 
         private async Task InitRabbitMQAsync()
         {
-            var factory = new ConnectionFactory { HostName = "localhost" };
+            var factory = new ConnectionFactory { HostName = "host.docker.internal" };
             _connection = await factory.CreateConnectionAsync();
             _channel = await _connection.CreateChannelAsync();
 

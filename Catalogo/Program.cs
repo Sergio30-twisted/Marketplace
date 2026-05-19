@@ -34,8 +34,12 @@ try
     builder.Services.AddScoped<IGestorDeCategoriaService, GestorDeCategoriaService>();
     builder.Services.AddScoped<IAdministracionDeCatalogosService, AdministracionDeCatalogosService>();
     builder.Services.AddHostedService<CatalogoConsumer>();
+    builder.Services.AddHostedService<CrearCatalogoConsumer>();
 
     var app = builder.Build();
+
+    app.MapGrpcService<CatalogoGrpcService>();
+    
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
@@ -45,7 +49,6 @@ try
     app.UseHttpsRedirection();
     app.UseAuthorization();
     app.MapControllers();
-    app.MapGrpcService<CatalogoGrpcService>();
     app.Run();
 }
 catch (Exception ex)

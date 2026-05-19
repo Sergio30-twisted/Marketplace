@@ -5,8 +5,10 @@
     "\\Catalogo\\Application",
     "\\Catalogo\\Application\\Service",
     "\\CatalogService.API",
+    "\\Logisitica_Integrada",
+    "\\Logisitica_Integrada\\Controllers",
     "\\OrderService.API"
   ],
-  "SelectedNode": "\\Catalogo\\Application\\Service\\CatalogoGrpcService.cs",
+  "SelectedNode": "\\Logisitica_Integrada\\Controllers\\ReceptorDePedidosController.cs",
   "PreviewInSolutionExplorer": false
 }

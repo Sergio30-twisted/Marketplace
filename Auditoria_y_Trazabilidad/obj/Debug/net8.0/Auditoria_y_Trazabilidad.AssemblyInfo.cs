@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Auditoria_y_Trazabilidad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7f78054f150ba62628e9ceed21066842568d605")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8299d83d0384282fa04287505d35e996859cf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Auditoria_y_Trazabilidad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Auditoria_y_Trazabilidad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

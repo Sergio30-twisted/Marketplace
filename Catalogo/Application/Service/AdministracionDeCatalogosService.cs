@@ -14,6 +14,11 @@ namespace Catalogo.Application.Service
             _catalogosCollection = context.GetCollection<Catalogo.Domain.Entities.Catalogo>("Products");
         }
 
+        public async Task CrearAsync(Catalogo.Domain.Entities.Catalogo catalogo)
+        {
+            await _catalogosCollection.InsertOneAsync(catalogo);
+        }
+
         // ELIMINAR
         public async Task<bool> DeleteAsync(int id)
         {

@@ -33,7 +33,6 @@ try
     builder.Services.AddScoped<ICreacionCatalogoRepository, CreacionCatalogoRepository>();
     builder.Services.AddScoped<IGestorDeCategoriaService, GestorDeCategoriaService>();
     builder.Services.AddScoped<IAdministracionDeCatalogosService, AdministracionDeCatalogosService>();
-    builder.Services.AddHostedService<CatalogoConsumer>();
     builder.Services.AddHostedService<CrearCatalogoConsumer>();
 
     var app = builder.Build();

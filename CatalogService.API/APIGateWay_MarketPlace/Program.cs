@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVite",
-        policy => policy.WithOrigins("http://localhost:5173")
+        policy => policy.WithOrigins("http://localhost:5173", "http://localhost")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials());

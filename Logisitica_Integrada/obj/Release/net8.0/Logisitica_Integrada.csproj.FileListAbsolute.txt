@@ -1,0 +1,8 @@
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.AssemblyInfo.cs
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Release\net8.0\Logisitica_Integrada.sourcelink.json

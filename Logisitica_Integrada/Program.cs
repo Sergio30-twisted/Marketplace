@@ -1,22 +1,36 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// =========================================================================
+// 1. CONFIGURACIÓN DE SERVICIOS (CONTENEDOR DE DEPENDENCIAS)
+// =========================================================================
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// 🛠️ REGISTROS DE INYECCIÓN DE DEPENDENCIAS (Resuelve toda la cadena de activación)
+builder.Services.AddScoped<Logisitica_Integrada.Services.ShipmentRepository>();
+builder.Services.AddScoped<Logisitica_Integrada.Services.LogisticsNotifier>();
+builder.Services.AddScoped<Logisitica_Integrada.Services.ShipmentManager>();
+
+// Construcción de la aplicación (Ya no arrojará la excepción AggregateException)
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// =========================================================================
+// 2. PIPELINE DE PETICIONES HTTP (MIDDLEWARES)
+// =========================================================================
 
-app.UseHttpsRedirection();
+// Configuración de Swagger visible en cualquier entorno (Esencial para Docker)
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Logistica API v1");
+    c.RoutePrefix = string.Empty; // Hace que la documentación sea la página de inicio del contenedor
+});
+
+// ⚠️ Recordatorio: UseHttpsRedirection() se mantiene comentado para evitar bucles infinitos con NGINX
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

@@ -7,6 +7,7 @@ C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\De
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Logisitica_Integrada.dll
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Logisitica_Integrada.pdb
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -28,7 +29,6 @@ C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\De
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Logisitica_Integrada.props
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Logisitica_Integrada.props
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\Logisiti.A4CB1163.Up2Date
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\Logisitica_Integrada.dll
 C:\Users\marco\OneDrive\Documents\GitHub\Marketplace\Logisitica_Integrada\obj\Debug\net8.0\refint\Logisitica_Integrada.dll

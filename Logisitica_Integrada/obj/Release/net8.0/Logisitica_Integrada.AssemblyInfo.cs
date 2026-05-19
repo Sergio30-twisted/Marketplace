@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logisitica_Integrada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8299d83d0384282fa04287505d35e996859cf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bad8ab9f9dc5efb27b3c4e9fab274e89082e6406")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logisitica_Integrada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logisitica_Integrada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
